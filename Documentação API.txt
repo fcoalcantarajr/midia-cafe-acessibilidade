@@ -1,0 +1,6 @@
+Documentação das APIs para o aplicativo:
+- API de transporte público
+
+- API de Guia de Locais
+
+- API de comando de voz
