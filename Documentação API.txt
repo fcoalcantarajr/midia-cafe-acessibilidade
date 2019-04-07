@@ -1,6 +1,22 @@
 Documentação das APIs para o aplicativo:
 - API de transporte público
 
+
 - API de Guia de Locais
+Inexistente. 
+https://www.localguidesconnect.com/t5/General-Discussion/Is-there-a-Local-Guide-API/td-p/489165
+
+Talvez o Places contenha as informações obtidas através do Local Guides, porém não há nada na documentação que indique isso de maneira direta.
+
+A propaganda do Places fala que você pode fornecer serviços precisos sobre os locais desejados.
 
 - API de comando de voz
+
+Quanto ao comando de voz para utilizar no aplicativo, a primeira ideia era que fossem pré-estabelecidos comandos de voz que, quando ouvidos, já executavam determinadas ações. 
+
+A API mais próxima encontrada para isso foi o Google Voice Actions, porém esta API escuta apenas ações já pré-determinadas. Segue a lista:
+https://developers.google.com/voice-actions/system/#system_actions_reference.
+
+Minha sugestão é que utilizemos a api de Speech to text da própria Google como ouvinte para o input de voz, armazenando o texto resultante da voz em string e comparando com os métodos existentes. O único modelo a ser utilizado será o command_and_search.
+https://cloud.google.com/speech-to-text/
+
